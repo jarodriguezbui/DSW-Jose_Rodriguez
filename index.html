@@ -1,92 +1,102 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fase 1: Comprensión.</title>
+    <title>OVA - OVI: Propiedades básicas de CSS</title>
+    <link rel="stylesheet" href="Styles.css">
     <style>
         h1 {
-
-            color:darkslategrey;
-            text-align:center;
+        font-size: 2em; color: #333333; font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif ; text-align: center;
+        border-bottom: 2px solid #F47920;  margin: 0 65px; padding-bottom: 0.5em;
         }
-        h3 {
-            font-family:Verdana;
-            color:black;
-            text-align:left;
-            }
-        h6 {
-            color:black;
-            text-align: right;
-        }
-        body {
-                 background-image: url("images/12.jpg");
-            }
+        ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float: right;
+			}
+			
+			.nav li a {
+                font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+				background-color:#F0B429;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#005883;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
     </style>
+ 
 </head>
-<body>
-    <br><br>
-<h1> FASE1. Comprension. Repositorio GIT y GITHUB.</h1>
-<br>
-<br>
-<br>
-<br>
 
-<table align="center"  border="2">
-    <tr>
-        <th colspan="2"><b>PERIODO ACADEMICO 16-04</b></th>
-     </tr>
-    <tr>
-        <td><b> Curso: </b></td>
-        <td> Diseno de Sitios Web </td>    
-    </tr>   
-    <tr>
-        <td><b> Grupo: </b></td>
-        <td> 301122_74 </td>    
-    </tr> 
-    <tr>
-        <td> <b> Tutor (a): </b></td>
-        <td> Nathalia Andrea Cuervo.  </td>    
-    </tr>
-    <tr>
-        <td> <b> CCAV: </b></td>
-        <td> Eje Cafetero. Dosquebradas. </td>    
-    </tr>
-    <tr>
-        <td> <b> Universidad: </b></td>
-        <td> Universidad Nacional Abierta y a Distancia. UNAD. </td>    
-    </tr>
-    <tr>
-        <td><b> Estudiante:</b></td>
-        <td> Jose Alfredo Rodriguez Buitrago </td>    
-    </tr>   
-    <tr>
-        <td> <b> Email Universitario: </b></td>
-        <td> jarodriguezbui@unadvirtual.edu.co  </td>    
-    </tr>
-    <tr>
-        <td> <b> Email Personal: </b></td>
-        <td> josealftel@gmail.com </td>    
-    </tr>
-    <tr>
-        <td> <b> Celular / WhatsApp </b></td>
-        <td> 311 300 29 54 </td>    
-    </tr>
-    <tr>
-        <td> <b> Skype: </b></td>
-        <td> josearodriguez3  </td>    
-    </tr>
-    <tr>
-        <td> <b> Fecha: </b></td>
-        <td> Septiembre 3 de 2020</td>    
-    </tr>
-    <tr>
-        <td> <b> Ciudad: </b></td>
-        <td> Pereira. Risaralda</td>    
-    </tr>
-</table>
-<h3>ACCESO A DESARROLO FASE 2: DISEÑO. </h3>
-<p style = "font-family:Verdana"> Para acceder al desarrollo de la fase 2: Diseño. <a href="planing.html"><b>Clic Aqui</b></a>
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="autor.html">AUTOR</a></li>
+            <li><a href="autoevaluacion.html">AUTOEVALUACION</a>
+            </li>
+            <li><a href="">RECURSOS</a>
+                <ul>
+                    <li><a href="multimedia_2.html">Multimedia_1</a></li>
+                    <li><a href="multimedia_2.html">Multimedia_2</a></li>
+                </ul>
+            </li>
+            <li><a href="">CONCEPTOS</a>
+                <ul>
+                    <li><a href="display_1.html">Display: inline, block</a></li>
+                    <li><a href="display_2.html">Display: inline-block</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">INICIO</a></li>
+        </ul>
+    </div>
+<br><br><br>
+<img class="img" src="images/Log_Unad.PNG" alt="CSS">
+<br><br>
+<h1>Estrategias de Aprendizaje</h1> <br>
+<h2>OVA - OVI: Propiedades basicas de CSS</h2>
+<br>
+<img class="img2" src="images/css.PNG" alt="CSS">
+<p>La empresa HtmlDesign, está especializada en el diseño de objetos virtuales de aprendizaje
+    y a raíz de la pandemia COVID-19 la educación virtual se ha vuelto tema obligatorio. Por lo cual la Universidad UNAD, requiere
+     de recursos que permitan dinamizar las estrategias de aprendizaje. La compañia HtmlDesing propone implementar:<strong> Objetos Virtuales 
+     de Aprendizaje (OVA) y Objetos Virtuales de Información (OVI)</strong></p>
+
+<p >CSS(Cascade Style Sheets), en español Hojas de Estilo en Cascada, el cual permite dar estilo al sitio elaborado con código HTML.
+    Su última versión es CSS3, la cual presenta como principales características mayor control sobre el estilo de los elementos de la página web y a su vez
+    mayor número de efectos visuales. Las ventajas del uso de CSS son: Código más simple mara muchas tareas y mayores opciones de gráficas. Y la principal desventaja 
+    de CSS3 es que no tiene 100% compatibilidad con ningún navegador, por lo cual se sugiere ir implementando el código e 
+    ir validando los cambios en los principales navegadores como Firefox y Chrome. Normalmente los temas que se abordan en el estudio de CSS son: Pseudo Elementos, 
+    Pseudo Clases, efectos de texto y tipograficas, color, efectos de borde, propiedades de fondo, efectos de sombra
+    y brillo, transformaciones, transiciones, animaciones, así como propiedades de visualización o <strong>Display</strong>, la cual vamos a profundizar en el presente OVI.
+
+ 
+<br><br>
 <h6>®Disenado por Jose A. Rodriguez</h6>
 </body>
 </html>

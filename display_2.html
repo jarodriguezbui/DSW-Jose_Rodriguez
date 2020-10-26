@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: Inline-Block</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        h1 {
+        font-size: 2em; color: #333333; font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif ; text-align: center;
+        border-bottom: 2px solid #F47920;  margin: 0 65px; padding-bottom: 0.5em;
+        }
+        ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float: right;
+			}
+			
+			.nav li a {
+                font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+				background-color:#F0B429;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#005883;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="autor.html">AUTOR</a></li>
+            <li><a href="autoevaluacion.html">AUTOEVALUACION</a>
+            </li>
+            <li><a href="">RECURSOS</a>
+                <ul>
+                    <li><a href="multimedia_1.html">Multimedia_1</a></li>
+                    <li><a href="multimedia_2.html">Multimedia_2</a></li>
+                </ul>
+            </li>
+            <li><a href="">CONCEPTOS</a>
+                <ul>
+                    <li><a href="display_1.html">Display: inline, block</a></li>
+                    <li><a href="display_2.html">Display: inline-block</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">INICIO</a></li>
+        </ul>
+    </div>
+    <br><br> 
+    <br><br>
+    <h3>Ventajas y Desventajas CSS 3 </h1>
+        <img src="images/evolucion.PNG">
+   <p>Entre sus ventajas se destaca: Mayores opciones de gráficas y código más simple para muchas tareas. 
+       Y como desventajas css3 no tiene compatibilidad 100% con ningún navegador.
+
+   </p>
+    <h2>Display: Inline-Block </h2>
+    <p> Con el atributo Inline-Block el elemento tendrá un comportamiento mezcla entre Inline y Block. Los elementos 
+        a los cuales se les aplica inline-block fluyen con el texto y adicional se pueden aplicar valores de altura y ancho, 
+        conservando el formato en línea. 
+        Con la propiedad Inline-Block, el elemento genera una caja block pero que se comporta como si fuera inline
+        admitiendo otros elementos en la misma línea.
+    </p>
+    <img src="images/ej_block.PNG">
+    <p>En este ejemplo se observa como se hace uso de la etiqueta div "división" en color verde correspondiente al menú
+       (dentro del cual hay otro div en color rojo con el texto “Menú”, una línea generada por la etiqueta hr y una lista 
+       con la etiqueta ul con los items de menú).</p>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: Inline, Block</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        h1 {
+        font-size: 2em; color: #333333; font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif ; text-align: center;
+        border-bottom: 2px solid #F47920;  margin: 0 65px; padding-bottom: 0.5em;
+        }
+        ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float: right;
+			}
+			
+			.nav li a {
+                font-family: 'Franklin Gothic Book', 'Arial Narrow', Arial, sans-serif;
+				background-color:#F0B429;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#005883;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul class="nav">
+            <li><a href="autor.html">AUTOR</a></li>
+            <li><a href="autoevaluacion.html">AUTOEVALUACION</a>
+            </li>
+            <li><a href="">RECURSOS</a>
+                <ul>
+                    <li><a href="multimedia_1.html">Multimedia_1</a></li>
+                    <li><a href="multimedia_2.html">Multimedia_2</a></li>
+                </ul>
+            </li>
+            <li><a href="">CONCEPTOS</a>
+                <ul>
+                    <li><a href="display_1.html">Display: inline, block</a></li>
+                    <li><a href="display_2.html">Display: inline-block</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">INICIO</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <h3>CSS (Cascade Style Sheets)</h1>
+
+   <p>CSS son las siglas de "Hoja de estilo en cascada" y siver para dar estilo a una estructura
+    creada en HTML. CSS3 es la última versión hasta la fecha y presenta como principal
+    característica mayor control sobre el estilo de los elementos de nuestra página web y mayor
+    número de efectos visuales. CSS describe cómo se deben mostrar los elementos HTML.
+    CSS esta conformado por diferentes propiedades, el presente OVI se enfoca en la propiedad <strong>Display</strong>;
+    en sus atributos inline y block.</p>
+    <h2>Propiedad Display </h2>
+    <p> Esta propiedad específica si un elemento de la estructura es tratado como inline o como block.
+        Establece los tipos de visualización interna y extgerna de un elemento. Es decir establecer el tipo de 
+        caja que el navegador empleará para visualizar un elemento.
+  
+    </p>
+    <h2>Display: Inline</h2>
+    <p> Cuando se aplica la propiedad display: inline a un párrafo, su caja (block), se convierte en 
+        un elemento en línea y por tanto sólo ocupa el espacio necesario para mostrar sus contenidos, es decir
+        no ocupa todo el espacio de la página sino solo lo que ocupa un determinado elemento. Algunos ejemplos de elementos
+        en línea (inline) son: <strong>Span</strong>,  <strong>a</strong>, e <strong>img</strong>.
+<center><img src="images/inline.PNG">    </center>
+<h6>https://www.w3schools.com/css/tryit.asp?filename=trycss_display_inline_list</h6>
+<p> A continuación podemos observar la interacción de etiquetas para resaltar texto interactuando con
+    etiquetas para llamar vincutos (a href) y la etiqueta img, para adjuntar imagen.
+</p>
+<center><img src="images/inline_2.PNG">    </center> <br><br>
+<h2>Display: Block</h2>
+<p>Cuando a un elemento se le aplican valores de la propiedad Display:Block comenzará en una nueva línea y ocupará todo el ancho disponible de la página
+   (se extiende hacia la izquierda y hacia la derecha tanto como puede). Entre los principales elementos de bloque o block, se destacan
+   los encabezados (h1 hasta h6), las citas en bloque (blockquote), por supuesto los párrafos (p), y quizá la más conocida de todas que es la etiqueta
+   div usada normalmente para envolver a otros elementos.</p>
+<center><img src="images/block_1.PNG">    </center> <br><br>
+<p> Cuando empleamos la etiqueta (p) asociada al párrafo de un texto, todo el texto esta encerrado en un solo bloque tal cual se ilustra a continuación:
+</p>
+<center><img src="images/block_2.PNG">    </center> <br><br>
+</body>
+</html>
